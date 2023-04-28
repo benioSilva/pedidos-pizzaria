@@ -1,0 +1,87 @@
+body{
+    margin:  0;
+    box-sizing: border-box;
+    background-color: rgb(241, 192, 131);
+    
+}
+#topo {
+    
+    padding: 55px 100vh;
+    background: rgb(206, 55, 55);
+    display: flex;
+    justify-content: space-around;
+    max-width: 100vh;
+   
+}
+#topo, h3 {
+background: rgb(206, 55, 55);
+}
+#logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+#titulo-logo{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px  50px auto;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+#corpo {
+    display: flex;
+    
+    
+}
+#menu {
+    background: rgb(39, 39, 39);
+    color:whitesmoke;
+    height: 100vh;
+    width: 12%;
+   
+}
+
+#lista  li {
+    background: rgb(39, 39, 39);
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+       
+}
+#lista a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#lista a:hover{
+    background-color: rgb(53, 53, 53);
+    padding: 15px;
+}
+    
+    
+
+#cabeca{
+   
+    align-items: center;
+    margin-left: 600px;
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+
+#cardapio h4{
+
+    font-size: 45px;
+    margin-left: 25px;
+    
+}
+.catalogo{
+    margin-left: 20px;
+    display: flex;
+}
+.catalogo li{
+line-height: 25px;
+}
+.preco li{
+    list-style: none;
+    text-align: right;
+}

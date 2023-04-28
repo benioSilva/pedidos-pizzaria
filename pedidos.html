@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pedidos.css">
+    <title>Pedidos</title>
+  </head>
+    <body>
+      <header>
+        <nav id="topo">
+            <img src="logo pizza" alt="pizzaria 8 fatias" id="logo"> 
+            <h3 id="titulo-logo">Pizzaria 8 fatias</h3>
+        </nav>
+    </header>
+    <body>
+     <div id="corpo">
+        <div id="menu">
+          <ul id="lista">
+            <li><a href="index.HTML">Cardapio</a></li> <br>
+            <li><a href="pedidos.html">Pedidos</a> </li> <br>
+            <li> <a href="lista-pedidos.html">Lista de pedidos</a></li>
+          </ul>
+        </div>
+        <div class="" role="" id="cadastro">
+          <div class="camposPreencher">
+            <label class="camposTitulos" for="">Nome</label><br>
+            <input class="camposCaixa" id="nome"  name="nome" type="text" value=""
+              placeholder="Josismar Anastolfo">
+
+          </div>
+          <div class="camposPreencher">
+            <label class="camposTitulos" for="">Endereço</label><br>
+            <input class="camposCaixa" id="endereco"  name="Endereço" type="text" value=""
+             placeholder="Av. Volta sem fim nº 0">
+
+          </div>
+          <div class="camposPreencher">
+            <label class="camposTitulos" for="">Telefone</label><br>
+            <input class="camposCaixa" id="telefone"  type="tel" name="telefone" value="" placeholder="(11)97070-7070">
+            
+          </div>
+          <div class="camposPreencher">
+          <label class="camposTitulos" for="">Sabor 1 <span class="aviso">(Preencha com o numero da pizza)</span> </label><br>
+            <input id="saborNumero1" class="camposCaixa"  type="number" name="sabor" value="">
+            <p id="nomeDaPizza"></p>
+            <label class="camposTitulos" for="">Sabor 2 <span class="aviso">(Preencha com o numero da pizza)</span> </label><br>
+            <input class="camposCaixa" id="saborNumero2" type="number" name="sabor" value="">
+            <p id="nomeDaPizza2"></p>
+            <label class="camposTitulos" for="">Sabor 3 <span class="aviso">(Preencha com o numero da pizza)</span> </label><br>
+            <input class="camposCaixa" id="saborNumero3" type="number" name="sabor" value="">
+            <p id="nomeDaPizza3"></p>
+            <label class="camposTitulos" for="">Sabor 4 <span class="aviso">(Preencha com o numero da pizza)</span> </label><br>
+            <input class="camposCaixa" id="saborNumero4" type="number" name="sabor" value="">
+            <p id="nomeDaPizza4"></p>
+            <label class="camposTitulos" for="">Sabor 5 <span class="aviso">(Preencha com o numero da pizza)</span> </label><br>
+            <input class="camposCaixa" id="saborNumero5" type="number" name="sabor" value="">
+            <p id="nomeDaPizza5"></p>
+            
+          </div>
+          <div class="camposPreencher">
+            <label class="camposTitulos" for="">Valor</label><br>
+            <input class="camposCaixa" id="valor"  type="number" name="valor" value= >
+            
+          </div>
+
+          <button type="button"  style="margin-top: 5px;" id="btnEnviar"> enviar</button>
+        </div>
+     </div>
+     <script src="pedidos.js"></script>
+    </body>
+   
+</html>
