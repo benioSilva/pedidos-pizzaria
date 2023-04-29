@@ -69,12 +69,15 @@ background: rgb(206, 55, 55);
     margin-left: 450px;
     font-size: 30px;
 }
-.table{
-    border-bottom: 2px solid rgb(43, 43, 43);
-}
+
 #colunas th{
     padding: 15px;
     
   
    
+}
+
+#corpo1 td {
+    color: rgb(53, 53, 53);
+    font-size: 25px;
 }
