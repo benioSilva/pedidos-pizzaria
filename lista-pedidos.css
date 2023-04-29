@@ -58,3 +58,23 @@ background: rgb(206, 55, 55);
     background-color: rgb(53, 53, 53);
     padding: 15px;
 }
+
+
+#listaDePedidos h1{
+    font-size: 60px;
+    margin-left: 620px;
+   
+}
+#listaDePedidos .table{
+    margin-left: 450px;
+    font-size: 30px;
+}
+.table{
+    border-bottom: 2px solid rgb(43, 43, 43);
+}
+#colunas th{
+    padding: 15px;
+    
+  
+   
+}
