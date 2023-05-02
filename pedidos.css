@@ -2,6 +2,7 @@ body{
     margin:  0;
     box-sizing: border-box;
     background-color: rgb(241, 192, 131);
+    overflow-x: hidden;
     
 }
 #topo {
@@ -30,9 +31,11 @@ background: rgb(206, 55, 55);
 }
 #corpo {
     display: flex;
+
     
     
 }
+
 #menu {
     background: rgb(39, 39, 39);
     color:whitesmoke;
@@ -56,27 +59,34 @@ background: rgb(206, 55, 55);
     color: whitesmoke;
 }
 #lista a:hover{
-    background-color: rgb(53, 53, 53);
+    background-color: rgb(44, 43, 43);
     padding: 15px;
 }
 #cadastro{
-    margin: 20px 30px;
+    margin: 20px 20%;
+    
 }
 .camposPreencher {
     margin: 15px;
     font-size: 20px;
+    border: dotted 3px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px 300px;
+    line-height: 35px;
+    align-items: center;
 
 }
 .camposCaixa {
-    font-size: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px black solid;
 }
 .camposTitulos .aviso{
     color: rgb(53, 53, 53);
     font-size: small;
 }
-/* #saborNumero{
-    width: 20%;
-} */
+
+
 
     
 

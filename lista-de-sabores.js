@@ -55,9 +55,9 @@ valorTabela()
      formularioSaboresObjeto.forEach(function (element, index) {
          console.log(element)
          document.getElementById("inserirTabela").innerHTML += '<tr>' +
-             '<th scope="row">' + (index + 1) + '</th>'
-         '<td>' + element.sabor2 + '</td>' +
-             '<td>' + element.valor2 + '</td>' +
+             '<th scope="row">' + (index + 1) + '</th>' +
+             '<td>' + element.sabor2 + '</td>' +
+             '<td>' + element.valor2+',00' + '</td>' +
              '<td><button onclick="comparacao(' + index + ')" type="button">clique</button></td>'
      });
  }

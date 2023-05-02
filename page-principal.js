@@ -17,4 +17,18 @@
 
 //  localStorage.setItem("precoPizzas", JSON.stringify(precoPizzaIndividual))
  
- 
+ var formularioSaboresStorage = localStorage.getItem("formularioSabores");
+ var formularioSaboresObjeto = JSON.parse(formularioSaboresStorage);
+console.log(formularioSaboresObjeto) 
+preencherCardapio()
+
+
+ function preencherCardapio (){
+    document.getElementById("pizzas").innerHTML = ""
+    formularioSaboresObjeto.forEach(function (element, index) {
+        document.getElementById("pizzas").innerHTML+= '<tr>' +
+        '<th scope="row">' + (index + 1) + '</th>' +
+        '<td>' + element.sabor2 + '</td>' +
+        '<td>' + element.valor2 + ',00' + '</td>' 
+    });
+ }
