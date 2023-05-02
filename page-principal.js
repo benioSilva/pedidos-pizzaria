@@ -26,7 +26,7 @@ preencherCardapio()
  function preencherCardapio (){
     document.getElementById("pizzas").innerHTML = ""
     formularioSaboresObjeto.forEach(function (element, index) {
-        document.getElementById("pizzas").innerHTML+= '<tr>' +
+        document.getElementById("pizzas").innerHTML+= 
         '<th scope="row">' + (index + 1) + '</th>' +
         '<td>' + element.sabor2 + '</td>' +
         '<td>' + element.valor2 + ',00' + '</td>' 

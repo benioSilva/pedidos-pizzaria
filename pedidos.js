@@ -6,20 +6,26 @@
     var nome = document.getElementById("nome");
     var endereco = document.getElementById("endereco");
     var telefone = document.getElementById("telefone"); 
-    var sabor = document.getElementById("saborNumero"); 
-    var valor = document.getElementById("valor"); 
+    var enviarSabor = document.getElementById("enviarSabor")
+   
+  
     var btnEnviar = document.getElementById("btnEnviar");
     var infoDoStorage = localStorage.getItem("info");
     var infoObjeto = JSON.parse(infoDoStorage);
-    
-    //console.log(jubilauDoStorage)
-   // console.log(jubilauObjeto)
+    var formularioSaboresStorage = localStorage.getItem("formularioSabores");
+    var formularioSaboresObjeto = JSON.parse(formularioSaboresStorage);
+    console.log(formularioSaboresObjeto) 
+    selectPizza()
     
    
-    
-    /*if (jubilauDoStorage != null) {
-      alert(jubilauObjeto.nome + '\n' + jubilauObjeto.email + '\n' + jubilauObjeto.idade);
-    }*/
+
+    function selectPizza (){
+      document.getElementById("sabor").innerHTML = ""
+      formularioSaboresObjeto.forEach(function(element, index){
+        document.getElementById("sabor").innerHTML+=
+        '<option  value='+index+'>'+element.sabor2+'</option>'
+      })
+    }
 
     btnEnviar.addEventListener("click", function(event){
       event.preventDefault();
@@ -30,7 +36,7 @@
       var infoDoStorage = localStorage.getItem("info");
       var infoObjeto = JSON.parse(infoDoStorage);  
       
-      let dados = {nome: nome.value, endereco: endereco.value, telefone: telefone.value, sabor: sabor.value, valor: valor.value};
+      let dados = {nome: nome.value, endereco: endereco.value, telefone: telefone.value};
       console.log(infoDoStorage)
       if (infoDoStorage == null){    
         const lista = [dados] 
@@ -42,7 +48,7 @@
       nome.value = "" 
       endereco.value = ""
       telefone.value = ""
-      sabor.value = ""
+
       valor.value = ""
     })
 

@@ -21,8 +21,8 @@
     <div id="corpo">
       <div id="menu">
         <ul id="lista">
-          <li><a href="index.HTML">Cardapio</a></li> 
-          <li><a href="pedidos.html">Pedidos</a> </li> 
+          <li><a href="index.HTML">Cardapio</a></li>
+          <li><a href="pedidos.html">Pedidos</a> </li>
           <li> <a href="lista-pedidos.html">Lista de pedidos</a></li>
           <li><a href="lista-de-sabores.html">Lista de sabores</a></li>
           <li><a href="lista-sabores-tabela.html">Sabores Cadastro</a></li>
@@ -47,10 +47,15 @@
 
         </div>
         <div class="camposPreencher">
-          <label class="camposTitulos" for="">Sabor <!--<span class="aviso">(Preencha com o numero da pizza)</span> -->
-          </label><br>
-          <input id="saborNumero" class="camposCaixa" type="text" name="sabor" value="">
 
+          <form action="" >
+            <label class="camposTitulos" for="">Sabor
+            </label><br>
+            <select name="sabor" id="sabor">
+
+            </select>
+            <button type="submit" id="enviarSabor">enviar</button>
+          </form>
 
         </div>
         <div class="camposPreencher">
