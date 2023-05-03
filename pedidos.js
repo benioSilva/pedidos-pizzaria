@@ -6,14 +6,15 @@
 var nome = document.getElementById("nome");
 var endereco = document.getElementById("endereco");
 var telefone = document.getElementById("telefone");
-var enviarSabor = document.getElementById("enviarSabor")
-
-
+var sabor = document.getElementById("sabor");
+var valor = document.getElementById("valor");
+var status1 = document.getElementById("status");
 var btnEnviar = document.getElementById("btnEnviar");
 var infoDoStorage = localStorage.getItem("info");
 var infoObjeto = JSON.parse(infoDoStorage);
 var formularioSaboresStorage = localStorage.getItem("formularioSabores");
 var formularioSaboresObjeto = JSON.parse(formularioSaboresStorage);
+console.log(status1.value)
 console.log(formularioSaboresObjeto)
 loadselectPizza()
 
@@ -31,7 +32,9 @@ function onChangeSaborPizza (){
   let saborSelecionadoindex = document.getElementById("sabor").value
   document.getElementById("valor").value=formularioSaboresObjeto[saborSelecionadoindex].valor2
 
+
 }
+
 btnEnviar.addEventListener("click", function (event) {
   event.preventDefault();
 
@@ -41,7 +44,8 @@ btnEnviar.addEventListener("click", function (event) {
   var infoDoStorage = localStorage.getItem("info");
   var infoObjeto = JSON.parse(infoDoStorage);
 
-  let dados = { nome: nome.value, endereco: endereco.value, telefone: telefone.value };
+  let dados = { nome: nome.value, endereco: endereco.value, telefone: telefone.value,
+    sabor: formularioSaboresObjeto[sabor.value].sabor2, valor: formularioSaboresObjeto[sabor.value].valor2, status: status1.value };
   console.log(infoDoStorage)
   if (infoDoStorage == null) {
     const lista = [dados]
@@ -54,7 +58,7 @@ btnEnviar.addEventListener("click", function (event) {
   endereco.value = ""
   telefone.value = ""
 
-  valor.value = ""
+  
 })
 
 

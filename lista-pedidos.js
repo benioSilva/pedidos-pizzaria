@@ -26,6 +26,8 @@ preencherTabela()
                         '<td>'+ element.telefone +'</td>'+
                         '<td>'+ element.sabor +'</td>'+
                         '<td>'+ element.valor +'</td>'+
+                        '<td>'+ element.status +'<button onclick="" type="button" id="confirmar"> confirmar</button></td>'+
+                        //'<td><button onclick="" type="button"> confirmar </td>'+
                         '<td><button onclick="verificar('+index+')" type="button">click</button></td>'
                         /* na função onclick eu inseri um botao que ao rodar a função verificar, ele me dá o valor do index(indice)
                         como ele vai acabar sendo igual ao valor de num pq o meu parametro passa a ser o mesmo index, ele passa a 
@@ -34,6 +36,11 @@ preencherTabela()
                         */
                       '</tr>'/*usando o innerHTML para replicar os codigos HTML corfome for Replicado com forEach respeitando
                       a semantica entre string, variavel e formula*/
+                        
+                        
+                      })
 
-    });
-    }
+    
+  }
+  
+  
